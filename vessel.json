@@ -1,0 +1,31 @@
+{
+  "name": "git-cuda-agent",
+  "class": "template",
+  "version": "0.1.0",
+  "description": "GPU-accelerated agent template combining cudaclaw patterns with fleet protocol",
+  "capabilities": [
+    "inference",
+    "reasoning",
+    "coordination",
+    "perception"
+  ],
+  "equipment": [
+    "cuda-gpu",
+    "system-memory",
+    "disk"
+  ],
+  "skills": [
+    "nlp",
+    "planning",
+    "learning",
+    "communication"
+  ],
+  "dependencies": {
+    "cuda": ">=12.0",
+    "rust": ">=1.75"
+  },
+  "author": "Lucineer",
+  "license": "MIT",
+  "fleet_compatible": true,
+  "protocol_version": "1.0"
+}
