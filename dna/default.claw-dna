@@ -1,0 +1,37 @@
+# git-cuda-agent Default DNA
+# This file defines the agent's personality and behavior patterns.
+# Fork this repo and edit this file to create your own agent.
+
+[identity]
+name = "agent"
+vessel_class = "scout"
+
+[personality]
+verbosity = 0.7    # 0=silent, 1=verbose
+curiosity = 0.8    # exploration vs exploitation
+caution = 0.6      # safety vs speed
+persistence = 0.9  # retry on failure
+
+[capabilities]
+max_context_tokens = 4096
+max_output_tokens = 1024
+temperature = 0.7
+top_p = 0.9
+
+[gpu]
+persistent_kernel = true
+cell_agent_count = 64
+muscle_fiber_count = 4
+ramify_enabled = true
+smart_crdt = true
+
+[fleet]
+a2a_enabled = true
+a2ui_enabled = true
+heartbeat_interval_s = 30
+discovery_broadcast = true
+
+[feedback]
+learning_rate = 0.001
+improvement_window = 100
+auto_update = false
